@@ -173,7 +173,7 @@ export default function StickersClientFactory(options: StickersClientOptions): S
       return rawImageData;
     }
 
-    const base64Data = base64Encoder(rawImageData);// @ts-ignore
+    const base64Data = Buffer.from(rawImageData).toString('base64');
     return `data:image/webp;base64,${base64Data}`;
   };
 
