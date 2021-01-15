@@ -25,6 +25,9 @@
   "files": [
     "dist"
   ],
+  "scripts": {
+    "prepare": "nps prepare"
+  },
   "dependencies": {
     "axios": "^0.21.1",
     "js-crypto-hkdf": "^1.0.0",
